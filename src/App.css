@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.app_container{
+  width: 1200px;
+  min-height: 500px;
+  margin: auto;
+  border: 1px solid green;
+  position: relative;
+  top: 20px;
+  /* box-shadow: 0px 0px 4px 0px #5e600565; */
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_header{
+  position: absolute;
+  width: 100%;
+  left: 10px;
+}
+#lable_header{
+  margin:24px 24px 0 10px ;
+  line-height: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content_header{
+  width:100%;
+  /* position: absolute; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.content_header--info{
+  width: 50%;
+  position: absolute;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name_company p{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.address_company p, .number_text p, .release_date p{
+  font-style: italic;
+  margin-right: 16px;
+  margin: 4px 4px 4px 0;
+}
+
+.address_company , .number_text , .release_date {
+  display: flex;
+  line-height: normal;
+  margin: 4px 4px 4px 0;
+}
+
+.address_company span, .release_date span{
+  margin: 4px 4px 4px 0;
+}
+
+.number_text input {
+  border: none;
+  outline: none;
 }
